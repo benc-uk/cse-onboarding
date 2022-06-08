@@ -1,0 +1,13 @@
+{
+  "name": "techonboard",
+  "version": "1.0.0",
+  "description": "This repo contains instructions, guidance and details of a fictional scenario intended to get new starters in CSE familiar with several aspects of how we work",
+  "scripts": {
+    "lint": "markdownlint ./*.md --disable MD013"
+  },
+  "author": "Ben Coleman",
+  "license": "MIT",
+  "devDependencies": {
+    "markdownlint-cli": "^0.31.1"
+  }
+}
