@@ -44,3 +44,9 @@ The follow aspects can be ignored or worked around:
 - Frontend, web client and UI, this is being developed by a different team. Agree and invent the shape of the API to be called
 - The legacy system can mocked and assumed to exist, the key thing is to design and code a way to send data over to it, in an asynchronous fashion.
 - Authentication and authorization is out of scope. Clearly this is not indicative of a real CSE engagement, however it will allow the team to focus on other concerns, and stops the exercise becoming one sidetracked by auth & identity.
+
+## Hints
+
+If the team are stuck, some concrete details and spec for the system are provided here
+
+[Technical Design Hints](hints.md)

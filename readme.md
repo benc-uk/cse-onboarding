@@ -37,7 +37,16 @@ An ADS is normally run over 3 or 5 days with a customer and acts as kick off for
 - Develop technical architecture
 - Identify additional tech skills needed for the engagement
 
-For this on-boarding exercise it should be done over a day, and essentially acts as the kick off or day 1 for the exercise.
+For this on-boarding exercise it should be done over a day, and essentially acts as the kick off for the exercise.
+
+### Rough Schedule
+
+This is a hypothetical timeline:
+
+- WEEK 1: Start with the ADS and/or kick off session, agree approach & roles. Get pre-reqs in place such as access to Azure, project boards & repo etc
+- WEEK 2: Start investigation spikes, create initial codebase, pick & deploy Azure services and next layer of logical or functional design
+- WEEK 3: Sprint on agreed backlog items, build out API features, automated CI and CD, repeatably deployable environments
+- WEEK 4: Wrap up, run demos, document findings
 
 ## Facilitation  
 
@@ -49,11 +58,17 @@ At least one member of the team, ideally the dev lead should have experience of 
 
 ## Customer Scenario
 
-Currently one scenario is provided, potential to add more to be added later:
+Currently one scenario is provided, potentially more will be added later:
   
 - [Iommi Corp - Modernized Customer Experience](scenarios/iommi-corp/readme.md)
 
-## Technical Pre Reqs
+## Guiding Principles
+
+- The object of the exercise is to learn. 
+- Ask questions, and take your time there is no prize and no completion or end date
+- Senior developers and other subject experts should guide towards answers and outcomes, rather than "taking over" and giving complete solutions to problems.
+
+## Technical Pre Reqs & Dev Environments
 
 As this exercise is designed for new hires and people new to CSE, there maybe questions about developer tools, setup of laptops and local environments. This guide has been provided to assist with this. However nothing in this guide is mandatory
 

@@ -48,6 +48,9 @@ GET   /profile/{id}
 // Update a profile
 PUT   /profile/{id}
 
+// Update a profile photo
+PUT   /profile/{id}/photo/{id}
+
 // Creates a new account and profile
 POST  /register      
 
@@ -58,4 +61,8 @@ DELETE   /profile/{id}/subscription/{service_id}
 // Manage services
 GET, POST, PUT, DELETE
       /service
+
+// Manage photos
+GET, POST, PUT, DELETE
+      /photo
 ```
