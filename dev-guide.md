@@ -24,7 +24,7 @@ For all the development tools, software, SDKs and other things you will be using
 
 ### WSL Setup
 
-These steps should be run inside WSL. This repo https://github.com/benc-uk/tools-install contains quick setup & install scripts which can accelerate this stage
+These steps should be run inside WSL. This repo [https://github.com/benc-uk/tools-install](https://github.com/benc-uk/tools-install) contains a maintained library of easy install scripts which can accelerate this stage
 
 - Install SDKs and dev tools for languages you will be using; this is likely to be project dependant; but could include; [Node/TypeScript](https://github.com/benc-uk/tools-install/blob/master/node.sh), [Go](https://github.com/benc-uk/tools-install/blob/master/golang.sh), [Java](https://github.com/benc-uk/tools-install/blob/master/jdk11.sh) or [.NET](https://github.com/benc-uk/tools-install/blob/master/dotnet.sh)
   - Install VS Code extensions for relevant languages.
@@ -35,17 +35,17 @@ These steps should be run inside WSL. This repo https://github.com/benc-uk/tools
 
 - Pushing and pulling code with Azure DevOps from WSL can be tricky due to the credentials & auth required, there are two options
   - Use git with SSH. [Create a SSH keypair, and add this to any Azure DevOps projects](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
-  - Install and configure [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (This has been problematic in the past)
+  - Install and configure [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Mixed results trying to get this to work)
 
 ## MacOS Users
 
-TBA
+TBA 🙃
 
 ## Dev Containers
 
 Many in CSE use ["Dev Containers"](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/) which is a feature of VS Code, where you run VS code from inside a container which can include all the tools and setup needed to work with a particular code base.
 
-To validate this feature is working, you can [clone this repo](https://github.com/benc-uk/nodejs-demoapp) to your local machine. Open in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working.
+To validate this feature is working, you can [clone this repo](https://github.com/benc-uk/nodejs-demoapp) to your local machine. Open the repo from WSL in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working. NOTE. You must ensure that VS Code has the project open using WSL (You will see 'WSL' the very bottom left) before reopening in a container.
 
 ## VS Code Extensions
 

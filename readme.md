@@ -18,7 +18,7 @@ The following is intended as a high level guideline to provide some structure to
 
 - Create project in AzDo or GitHub to track work and hold code, docs, wiki etc.
 - Decide on where and how you will collaborate, e.g. Teams
-- Carry out a "mini" Architecture Design Session (ADS), the dev lead will likely run this with you, based on one of the provided scenarios below.
+- Carry out a "mini" Architecture Design Session (ADS), the dev lead will likely run this with you, [based on one of the provided scenarios below](#customer-scenarios).
 - Build high level design, solutioning, architecture/service choices, and diagrams etc.
 - Build backlog
   - Focus on spikes and investigations where there is ambiguity, include them in backlog/board
@@ -56,7 +56,7 @@ At least one member of the team, ideally the dev lead should have experience of 
 - The scenario will not cover every small detail of what is required. The facilitator should invent and encourage the team to be creative, e.g. "What should this API endpoint be named?",  especially if the team are stuck or paralyzed by the ambiguity.
 - Drive the overall shape of what the team agree to do, especially the initial backlog, and help team agree cadency and sprinting structure
 
-## Customer Scenario
+## Customer Scenarios
 
 Currently one scenario is provided, potentially more will be added later:
   
