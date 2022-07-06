@@ -54,15 +54,16 @@ This is a hypothetical timeline:
 
 - The object of the exercise is to learn. 
 - Ask questions, and take your time - there is no award for speed :)
+- The scenario scope will likely cover much more than you can accomplish, this is OK - along as priority & core focus is agreed upfront as a group. 
 - Senior developers and other subject experts should guide towards answers and outcomes, rather than "taking over" and giving complete solutions to problems.
 
-## 🔮 Facilitation  
+## 🧙 Facilitation  
 
-At least one member of the team, ideally the dev lead should have experience of working on or running several CSE projects, they should act as a facilitator & coordinator. The role of the facilitator is to:
+At least one member of the team, ideally the dev lead or TPM should have experience of working on or running several CSE projects, they should act as a facilitator & coordinator. The role of the facilitator is to:
 
 - Act and in-part "role-play" as the customer in the initial ADS, answering questions and clarifying requirements where required.
-- The scenario will not cover every small detail of what is required. The facilitator should invent and encourage the team to be creative, e.g. "What should this API endpoint be named?",  especially if the team are stuck or paralyzed by the ambiguity.
-- Drive the overall shape of what the team agree to do, especially the initial backlog, and help team agree cadency and sprinting structure
+- The scenario will not cover every small detail of what is required. The facilitator should invent and encourage the team to be creative, e.g. "What should this API endpoint be named?",  especially if the team are stuck or paralyzed by ambiguity.
+- Drive the overall shape of what the team agree to do, especially the initial backlog, and help team agree cadence and sprint structure
 
 ## 👷‍♂️ Customer Scenarios
 
@@ -70,7 +71,7 @@ Currently one scenario is provided, potentially more will be added later:
   
 - [Iommi Corp - Modernized Customer Experience](scenarios/iommi-corp/readme.md)
 
-## Technical Pre Reqs & Dev Environments
+## 🔧 Technical Pre Reqs & Dev Environments
 
 As this exercise is designed for new hires and people new to CSE, there maybe many questions about developer tools, setup of laptops and local environments. A guide has been provided to assist with this. However nothing in this guide is mandatory
 

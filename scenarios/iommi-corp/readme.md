@@ -1,23 +1,23 @@
 # Iommi Corp - Modernized Customer Experience
 
-Iommi Corp is a global company and leading provider of McGuffin services and the trading of widgets & doohickeys. Iommi is looking to modernize how their customers can access the range of services that Iommi provides, also manage their accounts etc.
+Iommi Corp is a global leading provider of mcguffin services and the trading of widgets & doohickeys. Iommi is looking to modernize how their customers can access the range of products & services that Iommi provides, manage their accounts, self service etc.
 
-Iommi Corp has reached out to Microsoft and wants to engage with CSE on a greenfield implementation of this new system in Azure. Iommi Corp is new to the cloud, so are looking for a lot of guidance, and are open to suggestions on architecture & design of the system. 
+Iommi Corp is a important Microsoft customer and has reached out to see how CSE can help on a greenfield implementation of this new system in Azure. Iommi Corp is new to the cloud, so are looking for a lot of guidance, and are open to suggestions on architecture & design of the system. 
 
 ## High Level Requirements
 
 The core of what Iommi Corp require is as follows:
 
-- **A set of APIs** to be able to manage user profiles and other entites in the system. This is the core of what the customer wants to build. customer is interested in how they provide both public and private APIs. The specific API mechanism and routes/operations has not been agreed.
+- **A set of APIs** to be able to manage user profiles and other entities in the system. This is the core of what the customer wants to build. customer is interested in how they provide this a public endpoint. The specific API mechanism and routes/operations has not been agreed.
 - **Backend datastore**. As this is a greenfield project, the customer is interested in exploring a range of options, NoSQL, relational, document-db, key-value etc.
-- **Asynchronous interface(s)** to backend legacy system/mainframe. The backend is slow and has no direct APIs to call it. But updates to user profiles will need to be sent down to these legacy systems. The customer is thinking of some sort of message queue, but is unsure of the options they have.
-- **Storage of image & photo data** is a requirement, as users will be given a means to upload their own profile image
+- **Asynchronous interface(s)** to backend legacy system/mainframe. The backend is slow and has no direct APIs to call it. But updates to user profile data will need to be sent down to these legacy systems. The customer is thinking of some sort of messaging interface, but is unsure of the options they have.
+- **Storage of image & photo data** is a requirement, as users will be given a means to upload their own profile images and photos
 - **Automated deployment** of software components & artifacts when *main* is updated (Continuous delivery) with associated testing.
 - **Automated environment deployment & management** using infrastructure as code practices.
 
 ## Optional Stretch Requirements
 
-The customer is aware that CSE engages short term, so they have some non function areas which can be considered as stretch goals 
+The customer is aware that CSE engages fairly short term, so they have some non function areas which can be considered as stretch goals 
 
 - **Scaling & Auto Scaling** - Provide a way to scale the system when under high load, ideally automatically, and scaling back when load is light. This could be any component in the system but particularly the APIs and the datastore which will come under the most strain.
 - **Observability** - Understanding the health of the end to end system, individual components, even the API. Taking into account both performance and availability (failure rate). The customer would like to have some form of dashboard and a way of alerting teams on failures.
