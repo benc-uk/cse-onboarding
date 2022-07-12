@@ -45,7 +45,7 @@ For this on-boarding exercise it should be done over a day, and essentially acts
 
 This is a hypothetical timeline:
 
-- WEEK 1: Start with the ADS and/or kick off session, agree approach & roles. Get pre-reqs in place such as access to Azure, project boards & repo etc
+- WEEK 1: Start with the ADS and/or kick off session, agree approach & roles. Get pre-reqs in place such as access to Azure subscription(s), create project boards & code repo(s) etc
 - WEEK 2: Start investigation spikes, create initial codebase, pick & deploy Azure services and next layer of logical or functional design
 - WEEK 3: Sprint on agreed backlog items, build out API features, automated CI and CD, repeatably deployable environments
 - WEEK 4: Wrap up, run demos, document findings
@@ -54,14 +54,14 @@ This is a hypothetical timeline:
 
 - The object of the exercise is to learn. 
 - Ask questions, and take your time - there is no award for speed :)
-- The scenario scope will likely cover much more than you can accomplish, this is OK - along as priority & core focus is agreed upfront as a group. 
-- Senior developers and other subject experts should guide towards answers and outcomes, rather than "taking over" and giving complete solutions to problems.
+- The scenario scope will likely cover much more than you can accomplish, this is normal (customer's often have a scope greater than we can hope to meet with a single crew) - along as priority & core focus is agreed upfront as a group. 
+- Senior developers and other subject matter experts should guide towards answers and outcomes, rather than "taking over" and giving complete solutions to problems.
 
 ## 🧙 Facilitation  
 
 At least one member of the team, ideally the dev lead or TPM should have experience of working on or running several CSE projects, they should act as a facilitator & coordinator. The role of the facilitator is to:
 
-- Act and in-part "role-play" as the customer in the initial ADS, answering questions and clarifying requirements where required.
+- Act and in-part "role-play" as the customer in the initial ADS, answering questions and clarifying requirements where required. This helps set the direction for the team.
 - The scenario will not cover every small detail of what is required. The facilitator should invent and encourage the team to be creative, e.g. "What should this API endpoint be named?",  especially if the team are stuck or paralyzed by ambiguity.
 - Drive the overall shape of what the team agree to do, especially the initial backlog, and help team agree cadence and sprint structure
 
@@ -79,4 +79,5 @@ As this exercise is designed for new hires and people new to CSE, there maybe ma
 
 ## Contributing
 
-Yes, please 🙂
+Yes, please 🙂  
+Contact [Ben Coleman](mailto:ben.coleman@microsoft.com) or raise an issue / PR. 
