@@ -2,7 +2,7 @@
 
 Iommi Corp is a global leading provider of mcguffin services and the trading of widgets & doohickeys. Iommi is looking to modernize how their customers can access the range of products & services that Iommi provides, manage their accounts, self service etc.
 
-Iommi Corp is a important Microsoft customer and has reached out to see how CSE can help on a greenfield implementation of this new system in Azure. Iommi Corp is new to the cloud, so are looking for a lot of guidance, and are open to suggestions on architecture & design of the system. 
+Iommi Corp is an important Microsoft customer and has reached out to see how CSE can help on a greenfield implementation of this new system in Azure. Iommi Corp is new to the cloud, so are looking for a lot of guidance, and are open to suggestions on architecture & design of the system. 
 
 ## High Level Requirements
 

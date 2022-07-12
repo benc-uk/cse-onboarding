@@ -29,7 +29,7 @@ The following is intended as a high level guideline to provide some structure to
 
 ## 🏃‍♂️ Execution
 
-### Architecture Design Session (ADS):
+### Architecture Design Session (ADS)
 
 An ADS is normally run over 3 or 5 days with a customer and acts as kick off for the 'code-with' phase of an engagement.
 
@@ -52,9 +52,9 @@ This is a hypothetical timeline:
 
 ### Guiding Principles
 
-- The object of the exercise is to learn. 
+- The object of the exercise is to learn.
 - Ask questions, and take your time - there is no award for speed :)
-- The scenario scope will likely cover much more than you can accomplish, this is normal (customer's often have a scope greater than we can hope to meet with a single crew) - along as priority & core focus is agreed upfront as a group. 
+- The scenario scope will likely cover much more than you can accomplish, this is normal (customer's often have a scope greater than we can hope to meet with a single crew) - along as priority & core focus is agreed upfront as a group.
 - Senior developers and other subject matter experts should guide towards answers and outcomes, rather than "taking over" and giving complete solutions to problems.
 
 ## 🧙 Facilitation  
@@ -80,4 +80,4 @@ As this exercise is designed for new hires and people new to CSE, there maybe ma
 ## Contributing
 
 Yes, please 🙂  
-Contact [Ben Coleman](mailto:ben.coleman@microsoft.com) or raise an issue / PR. 
+Contact [Ben Coleman](mailto:ben.coleman@microsoft.com) or raise an issue / PR.

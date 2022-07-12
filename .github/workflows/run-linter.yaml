@@ -1,0 +1,15 @@
+#
+# Super basic workflow to run the linter
+#
+on:
+  push:
+
+name: run-linter
+jobs:
+  run-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install --ci
+      - run: npm run lint
+      

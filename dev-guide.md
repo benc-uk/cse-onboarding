@@ -2,7 +2,7 @@
 
 There is no prescribed dev environment in CSE, and everyone is free to set up their machine and work how they wish. The wide range of customer projects we engage on requires us to be flexible and willing to work with many languages, toolchains and platforms. This is in line with our "meet the customer where they are" aspiration.
 
-This section contains a *suggested* set of tools and dev environment which many in CSE use, it has been found to be flexible and works well in nearly every scenario 
+This section contains a *suggested* set of tools and dev environment which many in CSE use, it has been found to be flexible and works well in nearly every scenario.
 
 ## Windows Users
 
@@ -15,9 +15,9 @@ WinGet is the standard package manager for Windows and is included as part of th
 
 - [Install 'Dev Tooling' pack here](https://winstall.app/packs/zzbVwCc3M)
 
-For all the development tools, software, SDKs and other things you will be using day to day - these should be installed in WSL (Windows Subsystem For Linux) and not into Windows. This is the STRONGLY recommended route for Windows users to carry out their work. 
+For all the development tools, software, SDKs and other things you will be using day to day - these should be installed in WSL (Windows Subsystem For Linux) and not into Windows. This is the STRONGLY recommended route for Windows users to carry out their work.
 
-- [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install) 
+- [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
   - It is recommended to use a Debian based Linux distro such as Ubuntu
   - You can simply run `wsl --install` (from an elevated/admin prompt) and this will take care of everything (it will pick Ubuntu for you)
 - Install the [remote development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) in VS Code to work with WSL.
