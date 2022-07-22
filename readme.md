@@ -1,6 +1,6 @@
 # CSE Technical Onboarding
 
-This repo contains instructions, guidance and details of an exercise intended to get new starters in CSE familiar with several aspects of how we work, the technology we use and how we approach a project engagement. It is closely aligned to the [CSE Engineering Fundamentals](https://microsoft.github.io/code-with-engineering-playbook/) which is a playbook that provides both specific technical advice and general high level guidance on what good looks like to CSE.
+This repo contains instructions, guidance and details of an exercise intended to get new starters in CSE familiar with several aspects of how we work, the technology we use and how we approach a project engagement. It is closely aligned to the [CSE Code-With Engineering Playbook (CWEP)](https://microsoft.github.io/code-with-engineering-playbook/) which is a playbook that provides both specific technical advice and general high level guidance on what good looks like to CSE.
 
 ## 📝 Anticipated Outcomes and Activities
 
@@ -14,7 +14,7 @@ This repo contains instructions, guidance and details of an exercise intended to
 
 This exercise should be done as a team, ideally as a whole crew; with the dev lead, engineers and TPM all working together as they would on a real customer engagement. The length of time you spend should be agreed upfront but 2~4 weeks is a recommendation.
 
-The following is intended as a high level guideline to provide some structure to the exercise, but kept deliberately open ended. There will be a lot of ambiguity and questions at the start, you should consult the [engineering fundamentals](https://microsoft.github.io/code-with-engineering-playbook/) then agree upfront as a group on your approach
+The following is intended as a high level guideline to provide some structure to the exercise, but kept deliberately open ended. There will be a lot of ambiguity and questions at the start, you should consult the [engineering playbook](https://microsoft.github.io/code-with-engineering-playbook/) then agree upfront as a group on your approach
 
 - Create project in AzDo or GitHub to track work and hold code, docs, wiki etc.
 - Decide on where and how you will collaborate, e.g. Teams
