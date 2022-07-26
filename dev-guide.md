@@ -26,8 +26,8 @@ For all the development tools, software, SDKs and other things you will be using
 
 These steps should be run inside WSL. This repo [https://github.com/benc-uk/tools-install](https://github.com/benc-uk/tools-install) contains a maintained library of easy install scripts which can accelerate this stage
 
-- Latest WSL Ubuntu versions come with `git` installed. You can check if git installed by running `git --version` in your WSL Terminal tab.
-- Clone Tools Install repo to your WSL
+1. Latest WSL Ubuntu versions come with `git` installed. You can check if git installed by running `git --version` in your WSL Terminal tab.
+1. Clone Tools Install repo to your WSL
 ```
 cd ~
 git clone https://github.com/benc-uk/tools-install
