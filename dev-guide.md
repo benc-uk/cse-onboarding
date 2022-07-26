@@ -26,6 +26,13 @@ For all the development tools, software, SDKs and other things you will be using
 
 These steps should be run inside WSL. This repo [https://github.com/benc-uk/tools-install](https://github.com/benc-uk/tools-install) contains a maintained library of easy install scripts which can accelerate this stage
 
+- Latest WSL Ubuntu versions come with `git` installed. You can check if git installed by running `git --version` in your WSL Terminal tab.
+- Clone Tools Install repo to your WSL
+```
+cd ~
+git clone https://github.com/benc-uk/tools-install
+``` 
+
 - Install SDKs and dev tools for languages you will be using; this is likely to be project dependant; but could include; [Node/TypeScript](https://github.com/benc-uk/tools-install/blob/master/node.sh), [Go](https://github.com/benc-uk/tools-install/blob/master/golang.sh), [Java](https://github.com/benc-uk/tools-install/blob/master/jdk11.sh) or [.NET](https://github.com/benc-uk/tools-install/blob/master/dotnet.sh)
   - Install VS Code extensions for relevant languages.
 - Install Docker in WSL. There are a number of ways to do this but [this script will quickly and easily install Docker CLI and container runtime](https://github.com/benc-uk/tools-install/blob/master/docker.sh)
