@@ -35,6 +35,7 @@ These steps should be run inside WSL. This repo [https://github.com/benc-uk/tool
     git clone https://github.com/benc-uk/tools-install
     cd tools-install
     ``` 
+    
 3. There is a load of bash scripts in this repo. Not every project would need all of these tools. So here is a suggested list of tools to install as sane defaults for optimial experience.
 
     1. **Common Tools Installation**   
