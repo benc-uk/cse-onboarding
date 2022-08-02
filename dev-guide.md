@@ -46,51 +46,26 @@ These steps should be run inside WSL. This repo [https://github.com/benc-uk/tool
         ```
         ./docker.sh
         ```
-        Validate installation
-        ```
-        docker --version
-        ```
     1. **Node Installation**  
         ```
         ./node.sh
-        ```
-        Validate installation
-        ```
-        node --version
-        npm --version
         ```
     1. **Dotnet Installation**  
         ```
         ./dotnet.sh
         ```
-        Validate installation
-        ```
-        dotnet --version
-        ```
     1. **Go Installation**
         ```
         ./golang.sh
-        ```
-        Validate installation
-        ```
-        go version
         ```
     1. **Java Installation**
         ```
         ./jdk.sh
         ```
-        Validate installation
-        ```
-        java --version
-        ``` 
     1. **Azure CLI Installation**
         ```
         ./azure-cli.sh
         ```
-        Validate installation
-        ```
-        az --version
-        ``` 
 
 4. Install VS Code extensions for relevant languages.
   
