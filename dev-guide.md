@@ -26,16 +26,72 @@ For all the development tools, software, SDKs and other things you will be using
 
 These steps should be run inside WSL. This repo [https://github.com/benc-uk/tools-install](https://github.com/benc-uk/tools-install) contains a maintained library of easy install scripts which can accelerate this stage
 
-- Install SDKs and dev tools for languages you will be using; this is likely to be project dependant; but could include; [Node/TypeScript](https://github.com/benc-uk/tools-install/blob/master/node.sh), [Go](https://github.com/benc-uk/tools-install/blob/master/golang.sh), [Java](https://github.com/benc-uk/tools-install/blob/master/jdk11.sh) or [.NET](https://github.com/benc-uk/tools-install/blob/master/dotnet.sh)
-  - Install VS Code extensions for relevant languages.
-- Install Docker in WSL. There are a number of ways to do this but [this script will quickly and easily install Docker CLI and container runtime](https://github.com/benc-uk/tools-install/blob/master/docker.sh)
-  - Many guides including the VS Code docs will claim that Docker Desktop is required. However that is ***no longer the case***, as long as you open the project folder in WSL first, then open it as a container.
-  - However you can use Docker Desktop should you wish - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- Install Azure CLI, see above tools-install repo for a helper script [or follow the docs](http://aka.ms/azure-cli)
+### Setup Tools Install Repo
 
-- Pushing and pulling code with Azure DevOps from WSL can be tricky due to the credentials & auth required, there are two options
-  - Use git with SSH. [Create a SSH keypair, and add this to any Azure DevOps projects](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
-  - Install and configure [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Mixed results trying to get this to work)
+1. Latest WSL Ubuntu versions come with `git` installed. You can check if git installed by running `git --version` in your WSL Terminal tab.
+2. Clone Tools Install repo to your WSL
+    ```
+    cd ~
+    git clone https://github.com/benc-uk/tools-install
+    cd tools-install
+    ``` 
+    
+3. There is a load of bash scripts in this repo. Not every project would need all of these tools. So here is a suggested list of tools to install as sane defaults for optimial experience.
+
+    1. **Common Tools Installation**   
+        ```
+        ./base.sh
+        ```
+    1. **Docker Installation**   
+        ```
+        ./docker.sh
+        ```
+    1. **Node Installation**  
+        ```
+        ./node.sh
+        ```
+    1. **Dotnet Installation**  
+        ```
+        ./dotnet.sh
+        ```
+    1. **Go Installation**
+        ```
+        ./golang.sh
+        ```
+    1. **Java Installation**
+        ```
+        ./jdk.sh
+        ```
+    1. **Azure CLI Installation**
+        ```
+        ./azure-cli.sh
+        ```
+
+4. Install VS Code extensions for relevant languages.
+  
+    This is a list of recommended VS Code extensions
+    - [Azure (extension bundle pack)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+    - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
+    - [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+    - [Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+    - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+    - [Shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) (If working with bash a lot)
+    - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+    - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) (If you have been accepted into the [technical preview](https://github.com/features/copilot/signup))
+    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (For JS/Node/TS work)
+    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (For HTML/JS/Node/TS work)
+    - [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+5. Install Docker in WSL. There are a number of ways to do this but [this script will quickly and easily install Docker CLI and container runtime](https://github.com/benc-uk/tools-install/blob/master/docker.sh)
+    - Many guides including the VS Code docs will claim that Docker Desktop is required. However that is ***no longer the case***, as long as you open the project folder in WSL first, then open it as a container.
+    - However you can use Docker Desktop should you wish - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+    - Install Azure CLI, see above tools-install repo for a helper script [or follow the docs](http://aka.ms/azure-cli)
+
+6. Pushing and pulling code with Azure DevOps from WSL can be tricky due to the credentials & auth required, there are two options
+    - Use git with SSH. [Create a SSH keypair, and add this to any Azure DevOps projects](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
+    - Install and configure [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Mixed results trying to get this to work)
 
 ## MacOS Users
 
@@ -46,22 +102,3 @@ TBA 🙃
 Many in CSE use ["Dev Containers"](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/) which is a feature of VS Code, where you run VS code from inside a container which can include all the tools and setup needed to work with a particular code base.
 
 To validate this feature is working, you can [clone this repo](https://github.com/benc-uk/nodejs-demoapp) to your local machine. Open the repo from WSL in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working. NOTE. You must ensure that VS Code has the project open using WSL (You will see 'WSL' the very bottom left) before reopening in a container.
-
-## VS Code Extensions
-
-This is a list of recommended VS Code extensions
-
-- [Azure (extension bundle pack)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
-- [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
-- [Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- [Shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) (If working with bash a lot)
-- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) (If you have been accepted into the [technical preview](https://github.com/features/copilot/signup))
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (For JS/Node/TS work)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (For HTML/JS/Node/TS work)
-- [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
