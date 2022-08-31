@@ -93,6 +93,33 @@ These steps should be run inside WSL. This repo [https://github.com/benc-uk/tool
     - Use git with SSH. [Create a SSH keypair, and add this to any Azure DevOps projects](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
     - Install and configure [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Mixed results trying to get this to work)
 
+### Docker in WSL - Quality of Life
+
+When using Docker in WSL without Docker Desktop there are a few things you can do to make your life easier
+
+- Create aliases for stopping & starting Docker, add these to your rc files (e.g. `.bashrc` or `.zshrc` or other file which is sourced when you open a shell)
+
+  ```bash
+  alias start-docker='sudo /etc/init.d/docker start'
+  alias stop-docker='sudo /etc/init.d/docker stop'
+  ```
+
+- To have docker start every time you open a WSL shell, also add the following to your startup script (e.g. `.bashrc` or `.zshrc`)
+
+  ```bash
+  if [[ ! -f /var/run/docker.pid ]]; then { echo "🐳 Starting Docker..."; start-docker; }; fi
+  ```
+
+- Fed up with entering your password when running `sudo`? Then edit `/etc/sudoers` and allow sudo without password prompt.  
+Run `sudo nano /etc/sudoers` and add `NOPASSWD: ALL` to the line starting `%sudo`
+
+  e.g.
+
+  ```yaml
+  # Allow members of group sudo to execute any command
+  %sudo  ALL=(ALL:ALL) NOPASSWD: ALL
+  ```
+
 ## MacOS Users
 
 TBA 🙃

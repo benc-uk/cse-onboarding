@@ -17,7 +17,7 @@ This exercise should be done as a team, ideally as a whole crew; with the dev le
 The following is intended as a high level guideline to provide some structure to the exercise, but kept deliberately open ended. There will be a lot of ambiguity and questions at the start, you should consult the [engineering playbook](https://microsoft.github.io/code-with-engineering-playbook/) then agree upfront as a group on your approach
 
 - Create project in AzDo or GitHub to track work and hold code, docs, wiki etc.
-- Decide on where and how you will collaborate, e.g. Teams
+- Decide on where and how you will collaborate, e.g. Teams, Mural 
 - Carry out a "mini" Architecture Design Session (ADS), the dev lead will likely run this with you, [based on one of the provided scenarios below](#customer-scenarios).
 - Agree a programming language & toolchain to code in, it's potentially best if the whole team works on the same language. Suggestions are: Node.js/TypeScript, Go, C#, or Python.
 - Build high level design, solutioning, architecture/service choices, and diagrams etc.
