@@ -122,10 +122,50 @@ Run `sudo nano /etc/sudoers` and add `NOPASSWD: ALL` to the line starting `%sudo
 
 ## MacOS Users
 
-TBA 🙃
+The two core pieces of software you'll need installed within MacOs, are VS Code and XCode. You can find the links below
+
+- Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+- Install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) in the Apple App Store
+
+Xcode is a prerequisites for HomeBrew, which makes it easier for MacOs users to install packages like Git, Azure-cli and Terraform. After installed XCode (it might take a while), you can install HomeBrew by following the steps.
+
+- Install [HomeBrew](https://treehouse.github.io/installation-guides/mac/homebrew)
+
+After you installed homebrew, you can proceed with the following steps:
+
+Setting up [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos)
+
+```bash
+brew install azure-cli
+az --version
+```
+
+Setting up [git account](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) locally
+```bash
+git --version
+git config --global user.name "Cool Name"
+git config --global user.email "your@email.com"
+```
+
+Setting up Azure Functions Core Tools version 4
+```bash
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
+
+Setting up Dev Container and Docker [following the guidance](https://code.visualstudio.com/docs/remote/containers#_installation)
+
+For VS Code extensions please go to step 4 of [Windows Setup Tools Install Repo](#setup-tools-install-repo)
+
 
 ## Dev Containers
 
 Many in CSE use ["Dev Containers"](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/) which is a feature of VS Code, where you run VS code from inside a container which can include all the tools and setup needed to work with a particular code base.
 
-To validate this feature is working, you can [clone this repo](https://github.com/benc-uk/nodejs-demoapp) to your local machine. Open the repo from WSL in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working. NOTE. You must ensure that VS Code has the project open using WSL (You will see 'WSL' the very bottom left) before reopening in a container.
+Install the [remote development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+To validate this feature is working, you can [clone this repo](https://github.com/benc-uk/nodejs-demoapp) to your local machine. 
+
+For windows users, open the repo from WSL in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working. NOTE. You must ensure that VS Code has the project open using WSL (You will see 'WSL' the very bottom left) before reopening in a container.
+
+For MacOs users, open the repo in VS Code, then select the option "Reopen in container", if you get no errors and can open a terminal in VS Code and execute `make run` also without error, then Dev Containers is working.
