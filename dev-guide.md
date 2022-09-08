@@ -154,7 +154,7 @@ brew install --cask rectangle
 brew install go node npm python3 pipenv virtualenv pyenv nodejs temurin dotnet-sdk
 
  # Dev Tools
-brew install --cask docker postman drawio visual-studio-code
+brew install --cask docker postman drawio visual-studio-code azure-data-studio microsoft-azure-storage-explorer
 
 # Build Tools
 brew install cmake autogen autoconf automake gcc
