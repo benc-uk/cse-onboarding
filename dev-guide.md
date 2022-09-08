@@ -162,6 +162,15 @@ brew install cmake autogen autoconf automake gcc
 # CLI tools
 brew install wget rsync socat pv azure-cli kubectl jq
 
+# Login Azure and Set Default Subscription
+az login
+
+az account set --subscription {SubscriptionName}
+
+# Azure Functions Core Tools
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+
 # Mac App Store CLI
 brew install mas
 
@@ -191,15 +200,6 @@ mdatp exclusion folder add --path /usr/local/Cellar
 mdatp exclusion folder add --path /usr/local/Caskroom
 mdatp exclusion folder add --path "${HOME}/Parallels"
 mdatp exclusion folder add --path "${HOME}/.docker"
-
-# Login Azure and Set Default Subscription
-az login
-
-az account set --subscription {SubscriptionName}
-
-# Azure Functions Core Tools
-brew tap azure/functions
-brew install azure-functions-core-tools@4
 ```
 
 ## Dev Containers
