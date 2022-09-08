@@ -122,40 +122,85 @@ Run `sudo nano /etc/sudoers` and add `NOPASSWD: ALL` to the line starting `%sudo
 
 ## MacOS Users
 
-The two core pieces of software you'll need installed within MacOs, are VS Code and XCode. You can find the links below
-
-- Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-- Install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) in the Apple App Store
-
-Xcode is a prerequisites for HomeBrew, which makes it easier for MacOs users to install packages like Git, Azure-cli and Terraform. After installed XCode (it might take a while), you can install HomeBrew by following the steps.
-
-- Install [HomeBrew](https://treehouse.github.io/installation-guides/mac/homebrew)
-
-After you installed homebrew, you can proceed with the following steps:
-
-Setting up [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos)
+MacOS setup can be completed on terminal with following commands. It is better to run them in order and see successful installation in each step.
 
 ```bash
-brew install azure-cli
-az --version
-```
+# Xcode Tools
+sudo xcode-select --install
 
-Setting up [git account](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) locally
-```bash
-git --version
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+
+# Brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+
+# git and Github
+brew install git gh
+
+# Github Login
+gh auth login
+
+# Setup Git
 git config --global user.name "Cool Name"
 git config --global user.email "your@email.com"
-```
 
-Setting up Azure Functions Core Tools version 4
-```bash
+# Browsers
+brew install --cask google-chrome firefox
+
+# Window Management App
+brew install --cask rectangle
+
+ # Language Tools
+brew install go node npm python3 pipenv virtualenv pyenv nodejs temurin dotnet-sdk
+
+ # Dev Tools
+brew install --cask docker postman drawio visual-studio-code
+
+# Build Tools
+brew install cmake autogen autoconf automake gcc
+
+# CLI tools
+brew install wget rsync socat pv azure-cli kubectl jq
+
+# Mac App Store CLI
+brew install mas
+
+# Xcode
+mas install 497799835
+
+# Set Xcode Version and Accept Licence
+sudo xcode-select -r
+sudo xcodebuild -license accept
+
+# Show Hidden Files
+defaults write com.apple.Finder AppleShowAllFiles true
+
+# Office dogfood crashes regularly has caused data loss on more than one occasion
+# for more details, see https://teams.microsoft.com/l/message/19:efc6ebdedaa34bebbea96ac0de83223a@thread.skype/1621529390589?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&groupId=070a6bff-7541-4a26-b9f5-35f93be0b7ca&parentMessageId=1621524351171&teamName=CSE%20Community&channelName=Mac%20Users&createdTime=1621529390589 
+#
+# Install office using retail installers (once a month) via our direct pkg links at https://macadmins.software
+#
+# Stop MS autoupdate from using internal builds
+defaults write com.microsoft.autoupdate2 ChannelName Production
+
+# Stop MS autoupate from popping up all the time
+defaults write com.microsoft.autoupdate2 HowToCheck Manual
+
+# Disable (very slow) scanning of large folders by Defender
+mdatp exclusion folder add --path /usr/local/Cellar
+mdatp exclusion folder add --path /usr/local/Caskroom
+mdatp exclusion folder add --path "${HOME}/Parallels"
+mdatp exclusion folder add --path "${HOME}/.docker"
+
+# Login Azure and Set Default Subscription
+az login
+
+az account set --subscription {SubscriptionName}
+
+# Azure Functions Core Tools
 brew tap azure/functions
 brew install azure-functions-core-tools@4
 ```
-
-Setting up Dev Container and Docker [following the guidance](https://code.visualstudio.com/docs/remote/containers#_installation)
-
-For VS Code extensions please go to step 4 of [Windows Setup Tools Install Repo](#setup-tools-install-repo)
 
 
 ## Dev Containers
