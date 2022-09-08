@@ -202,7 +202,6 @@ brew tap azure/functions
 brew install azure-functions-core-tools@4
 ```
 
-
 ## Dev Containers
 
 Many in CSE use ["Dev Containers"](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/) which is a feature of VS Code, where you run VS code from inside a container which can include all the tools and setup needed to work with a particular code base.
